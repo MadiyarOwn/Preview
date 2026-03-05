@@ -18,7 +18,6 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-black/30">
       <Container className="py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
           <div>
             <Link href="/" className="inline-flex items-center gap-2">
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 text-white">
@@ -33,7 +32,6 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
             <p className="text-sm font-semibold text-white">Navigation</p>
             <ul className="mt-4 space-y-3">
@@ -50,7 +48,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Product */}
           <div>
             <p className="text-sm font-semibold text-white">Product</p>
             <ul className="mt-4 space-y-3">
@@ -67,7 +64,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contacts */}
           <div>
             <p className="text-sm font-semibold text-white">Contact</p>
 
@@ -119,7 +115,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} AstraAI. All rights reserved.</p>
 
