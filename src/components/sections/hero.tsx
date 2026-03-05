@@ -45,7 +45,7 @@ export function Hero() {
 
           </div>
 
-          <div className="relative mx-auto -mt-18 md:-mt-15 w-full  -z-10 max-w-auto">
+          <div className="relative mx-auto -mt-10 md:-mt-15 lg:-mt-18 w-full  -z-10 max-w-auto">
             <div className="pointer-events-none absolute inset-0 -z-10 [--glow-gap:clamp(3rem,10vw,10rem)]">
               <div className="absolute left-1/2 top-[70px]  -translate-x-[calc(100%+var(--glow-gap))] 
               h-[168px] w-[168px] md:h-[280px] md:w-[280px] lg:h-[320px] lg:w-[320px] rounded-full bg-[#8593E8]/70 blur-[200px]" />
