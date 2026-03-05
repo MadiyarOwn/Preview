@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-montserrat);
+}
+
+@layer components {
+
+  .text-hero {
+    @apply font-display font-medium tracking-[0.02em] leading-[100%]
+       text-[36px] sm:text-[48px]  md:text-[56px]  lg:text-[64px] ;/*  */
+  }
+
+  .text-lead {
+    @apply font-display font-normal text-[20px] leading-[33px] tracking-[0.72px] text-center;
+  }
+
+  .text-header {
+    @apply font-display font-medium text-[24px] leading-[100%] tracking-[0];
+}
+
+  .text-header-text {
+    @apply font-display font-thin text-[16px]  leading-[100%] tracking-[0] text-[14px] sm:text-[15px] md:text-[16px];;
+}
+
+.text-gradient-brand {
+  @apply bg-gradient-to-r from-[#FF3BFF] via-[#ECBFBF] via-[#5C24FF] to-[#D94FD5] bg-clip-text text-transparent;
+}
+  
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-right {
+  animation: scroll-right 40s linear infinite;
+}
+
+.scroll-left {
+  animation: scroll-left 40s linear infinite; 
+}
+
+.testimonials-row:hover {
+  animation-play-state: paused;
+}
+
+
+body {
+  font-family: var(--font-display), system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
